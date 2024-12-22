@@ -6,7 +6,6 @@ import {OfferPage} from '../pages/offer-page/offer-page.tsx';
 import NotFoundPage from '../pages/not-found-page/not-found-page.tsx';
 import PrivateRoute from '../private-route/private-route.tsx';
 import FavoritesPage from '../pages/favorites-page/favorites-page.tsx';
-import {ReviewsMock} from '../mocks/reviews.ts';
 
 function App(): JSX.Element {
   return (
@@ -28,7 +27,7 @@ function App(): JSX.Element {
             </PrivateRoute>
           }
         />
-        <Route path={AppRoute.Offer} element={<OfferPage initialReviews={ReviewsMock} />} />
+        <Route path={AppRoute.Offer} element={<OfferPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
