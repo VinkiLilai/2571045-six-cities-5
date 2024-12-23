@@ -1,10 +1,10 @@
-﻿import {useAppDispatch, useAppSelector} from '../hooks';
-import {Cities} from '../const.ts';
+﻿import {useAppDispatch, useAppSelector} from '../../hooks';
+import {Cities} from '../../const.ts';
 import {CityFavorites} from './city-favorites.tsx';
-import {CitiesNames} from '../types/city.ts';
-import {fetchFavoritesAction} from '../store/action.ts';
+import {CitiesNames} from '../../types/city.ts';
+import {fetchFavoritesAction} from '../../store/action.ts';
 import {useEffect} from 'react';
-import {selectFavorites} from '../store/selectors.ts';
+import {selectFavorites} from '../../store/selectors.ts';
 
 export function FavoritesList() {
   const dispatch = useAppDispatch();
